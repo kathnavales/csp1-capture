@@ -1,0 +1,48 @@
+* {
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+
+#my_navbar {
+	padding-right: 90px;
+}
+
+#navbar-nav {
+	padding: 30px 20px 20px 0px;
+}
+
+#nav_buttons {
+	color: white;
+}
+
+a:hover { 
+   	color: #FFCE2B;
+    opacity: 0.1;
+}
+
+#my_landing_container {
+	padding: 0px;
+	height: 800px;
+	background-image: url("../images/temp-langbg.jpg");
+	background-repeat: no-repeat, repeat;
+	background-size: cover;
+}
+
+#my_land_page {
+	text-align: center;
+	color: white;
+	padding-top: 220px;
+}
+
+#my_land_btn {
+	background-color: #FFCE2B;
+	color: white;
+}
+
+.my_capture {
+	font-size: 100px;
+}
+
+h3 {
+	color: white;
+}
