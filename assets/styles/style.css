@@ -92,23 +92,46 @@ h3 {
 	color: white;
 }
 
+#my_car_pic{
+	background-size: cover;
 
-.left-half {
-  background-color: #F2EDD6;
-  position: absolute;
-  left: 0px;
-  width: 50%;
-  height: 50%;
-  padding: 5%;
-  opacity: 0.7;
 }
 
-.right-half {
-  background-color: #b6701e;
-  position: absolute;
-  right: 0px;
+#home_content {
+	background-image: url("../images/home-bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top: 5%;
+
+}
+
+.my_column {
+  float: left;
   width: 50%;
-  height: 50%;
-  padding: 5%;
-  opacity: 0.7;
+  padding: 80px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.my_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#left_col {
+  color: white;
+}
+#right_col {
+	  background-color: #875f00;
+	  padding: 5%;
+}
+
+#right_col2 {
+	  background-color: #ee6000;
+}
+
+#home_pic {
+	max-width: 100%;
+	background-size: cover;
 }
