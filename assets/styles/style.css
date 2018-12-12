@@ -121,6 +121,11 @@ h3 {
 
 #left_col {
   color: white;
+
+}
+
+#left_col2{
+  color: #e7af00;
 }
 #right_col {
 	  background-color: #875f00;
@@ -132,6 +137,10 @@ h3 {
 }
 
 #home_pic {
-	max-width: 100%;
+	max-width: 80%;
 	background-size: cover;
+}
+
+#about_content {
+	float: center;
 }
