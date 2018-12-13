@@ -112,3 +112,12 @@ h3 {
   padding: 5%;
   opacity: 0.7;
 }
+
+#my_gallery{
+	background-image: url("../images/gallery/gallery-bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 3%;
+	text-align: center;
+	color: #FFCE2B;
+}
