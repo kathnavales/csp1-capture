@@ -19,7 +19,7 @@
 
 a:hover { 
    	color: #FFCE2B;
-    opacity: 0.1;
+    opacity: 0.6;
 }
 
 #my_landing_container {
@@ -111,6 +111,10 @@ h3 {
   height: 50%;
   padding: 5%;
   opacity: 0.7;
+}
+
+#my_about {
+	text-align: center;
 }
 
 #my_gallery{
