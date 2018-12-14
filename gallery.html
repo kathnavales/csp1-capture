@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name= "viewport" content= "width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+
+	<title>Gallery Page : Capture</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+	<link rel="icon" href="../../../../favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/styles/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/captureicon.png">
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+</head>
+
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav id="my_navbar" class="navbar-expand-lg navbar-light rounded sticky-top">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+
+        <div id="navbarToggle" class="collapse navbar-collapse justify-content-md-center">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a href="index.html"><img src="assets/images/captureicon.png" width="40px"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" class="nav-link active" target="_blank" href="home.html">Home</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" class="nav-link" target="_blank" href="about.html">About Us</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link"  class="nav-link" target="_blank" href="gallery.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+</nav>
+<!-- END OF NAVIGATION BAR -->
+
+<div id="my_gallery" class="container-fluid">
+	<h1 class="display-3">Gallery</h1>
+</div>
+<hr>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="row">
+            <a href="assets/images/gallery/1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="assets/images/gallery/1.jpg" class="img-fluid">
+            </a>
+            <a href="assets/images/gallery/2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="assets/images/gallery/2.jpg" class="img-fluid">
+            </a>
+            <a href="assets/images/gallery/3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="assets/images/gallery/3.jpg" class="img-fluid">
+            </a>
+        </div>
+        <div class="row">
+            <a href="assets/images/gallery/4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="assets/images/gallery/4.jpg" class="img-fluid">
+            <a href="assets/images/gallery/5.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="assets/images/gallery/5.jpg" class="img-fluid">
+            </a>
+            <a href="assets/images/gallery/6.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="assets/images/gallery/6.jpg" class="img-fluid">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="myfooter" class="page-footer">
+
+  <!-- Copyright -->
+  <div id="my_footer" class="footer-copyright text-center py-3">© 2018 Copyright:
+     Project Capture
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+
+<script type="text/javascript">
+                        $(document).ready(function ($) {
+                            // delegate calls to data-toggle="lightbox"
+                            $(document).on('click', '[data-toggle="lightbox"]:not([data-gallery="navigateTo"]):not([data-gallery="example-gallery-11"])', function(event) {
+                                event.preventDefault();
+                                return $(this).ekkoLightbox({
+                                    onShown: function() {
+                                        if (window.console) {
+                                            return console.log('Checking our the events huh?');
+                                        }
+                                    },
+                                    onNavigate: function(direction, itemIndex) {
+                                        if (window.console) {
+                                            return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                                        }
+                                    }
+                                });
+                            });
+            
+                            // disable wrapping
+                            $(document).on('click', '[data-toggle="lightbox"][data-gallery="example-gallery-11"]', function(event) {
+                                event.preventDefault();
+                                return $(this).ekkoLightbox({
+                                    wrapping: false
+                                });
+                            });
+            
+                            //Programmatically call
+                            $('#open-image').click(function (e) {
+                                e.preventDefault();
+                                $(this).ekkoLightbox();
+                            });
+                            $('#open-youtube').click(function (e) {
+                                e.preventDefault();
+                                $(this).ekkoLightbox();
+                            });
+            
+                            // navigateTo
+                            $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
+                                event.preventDefault();
+            
+                                return $(this).ekkoLightbox({
+                                    onShown: function() {
+            
+                                        this.modal().on('click', '.modal-footer a', function(e) {
+            
+                                            e.preventDefault();
+                                            this.navigateTo(2);
+            
+                                        }.bind(this));
+            
+                                    }
+                                });
+                            });
+            
+            
+                            /**
+                             * Documentation specific - ignore this
+                             */
+                            anchors.options.placement = 'left';
+                            anchors.add('h3');
+                            $('code[data-code]').each(function() {
+            
+                                var $code = $(this),
+                                    $pair = $('div[data-code="'+$code.data('code')+'"]');
+            
+                                $code.hide();
+                                var text = $code.text($pair.html()).html().trim().split("\n");
+                                var indentLength = text[text.length - 1].match(/^\s+/)
+                                indentLength = indentLength ? indentLength[0].length : 24;
+                                var indent = '';
+                                for(var i = 0; i < indentLength; i++)
+                                    indent += ' ';
+                                if($code.data('trim') == 'all') {
+                                    for (var i = 0; i < text.length; i++)
+                                        text[i] = text[i].trim();
+                                } else  {
+                                    for (var i = 0; i < text.length; i++)
+                                        text[i] = text[i].replace(indent, '    ').replace('    ', '');
+                                }
+                                text = text.join("\n");
+                                $code.html(text).show();
+            
+                            });
+                        });
+                    </script>
+
+
+</body>
+</html>

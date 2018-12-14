@@ -9,7 +9,7 @@
 	<title>Contact Us Page : Capture</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
-	<link rel="icon" href="../../../../favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/captureicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/styles/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
@@ -18,18 +18,20 @@
 </head>
 
 <body>
-<nav class="navbar-expand-lg navbar-light bg-light rounded">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my_navbar" aria-controls="my_navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- NAVIGATION BAR -->
+<nav id="my_navbar" class="navbar-expand-lg navbar-light rounded sticky-top">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+				</span>
+			</button>
 
-        <div id="my_navbar" class="collapse navbar-collapse justify-content-md-center">
+        <div id="navbarToggle" class="collapse navbar-collapse justify-content-md-center">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Project Capture <span class="sr-only">(current)</span></a>
+              <a href="index.html"><img src="assets/images/captureicon.png" width="40px"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" class="nav-link active" href="home.html">Home</a>
+              <a class="nav-link" class="nav-link active" target="_blank" href="home.html">Home</a>
             </li>
               <li class="nav-item">
               <a class="nav-link" class="nav-link" target="_blank" href="about.html">About Us</a>
@@ -43,10 +45,11 @@
           </ul>
         </div>
 </nav>
+<!-- END OF NAVIGATION BAR -->
 
 <div id="my_contact_form">
 
-	<form method="post">
+	<form id ="my_form" method="post">
 
 		<h3>Send Us your Feedback</h3>
 		<div class="row">
@@ -64,11 +67,11 @@
 					<textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
 				</div>
 				<div class="form-group">
-					<input id = "btn_submit_con" type="submit" name="btnSubmit" class="btn btn-md" value="Send Message" />
+					<input id = "btn_submit_con" type="submit" name="btnSubmit" class="btn btn-lg" value="Send Message" />
 				</div>
 			</div>
 			<div class="col-md-6">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.675390649239!2d120.9906414143868!3d14.445861484723864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ce0183950089%3A0xe09d11357c3f0675!2sURCI+Townhomes!5e0!3m2!1sfil!2sph!4v1544439679966" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.675390649239!2d120.9906414143868!3d14.445861484723864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ce0183950089%3A0xe09d11357c3f0675!2sURCI+Townhomes!5e0!3m2!1sfil!2sph!4v1544439679966" frameborder="0" allowfullscreen></iframe>
 
 			</div>
 		</div>
@@ -78,6 +81,17 @@
 
 
 </div>
+<!-- Footer -->
+<footer id="myfooter" class="page-footer">
+
+  <!-- Copyright -->
+  <div id="my_footer" class="footer-copyright text-center py-3">© 2018 Copyright:
+     Project Capture
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 </body>
 		<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

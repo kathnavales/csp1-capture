@@ -19,13 +19,14 @@
 
 a:hover { 
    	color: #FFCE2B;
-    opacity: 0.1;
+    opacity: 0.6;
 }
 
 #my_landing_container {
 	padding: 0px;
 	height: 800px;
 	background-image: url("../images/temp-langbg.jpg");
+	width: 100%;
 	background-repeat: no-repeat, repeat;
 	background-size: cover;
 }
@@ -78,8 +79,14 @@ h3 {
  	color: white;
  }
 
+ iframe {
+ 	width: 100%;
+ 	height: 100%;
+ }
+
  #btn_submit_con {
  	background-color: #FFCE2B;
+ 	color: white;
  }
 
 #my_home_con {
@@ -92,55 +99,192 @@ h3 {
 	color: white;
 }
 
-#my_car_pic{
-	background-size: cover;
-
-}
-
-#home_content {
+#body_home {
 	background-image: url("../images/home-bg.jpg");
-	background-repeat: no-repeat;
+	background-size: cover;
 	background-attachment: fixed;
+}
+
+.abouth1 {
+	color: #FFCE2B;
+}
+#my_about {
+	padding-top: 2%;
+	text-align: center;
+	color: #FFCE2B;
+}
+
+#my_about > p {
+	color: black;
+}
+
+#about_tagline {
+	font-family: 'Racing Sans One', cursive;
+	text-align: center;
+}
+
+#my_logo {
 	padding-top: 5%;
-
+	text-align: center;
 }
 
-.my_column {
-  float: left;
-  width: 50%;
-  padding: 80px;
-  height: 400px; /* Should be removed. Only for demonstration */
+
+
+#my_gallery{
+	/*background-image: url("../images/gallery/gallery-bg.jpg");*/
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 3%;
+	text-align: center;
+	color: #FFCE2B;
 }
 
-/* Clear floats after the columns */
-.my_row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 #left_col {
-  color: white;
-
+	 padding: 15%;
 }
-
-#left_col2{
-  color: #e7af00;
-}
-#right_col {
-	  background-color: #875f00;
-	  padding: 5%;
+#right_col1 {
+	background-color: #5f5e5c;	
 }
 
 #right_col2 {
-	  background-color: #ee6000;
+	background-color: #e48d2c;
 }
 
-#home_pic {
-	max-width: 80%;
-	background-size: cover;
+#homepic {
+	padding-top: 10%;
+	width: 100%;
+}
+.row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.heading.heading-icon {
+    display: block;
+}
+.padding-lg {
+	display: block;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+.practice-area .inner{ 
+     border:1px solid #999999; 
+	 text-align:center; 
+	 margin-bottom:28px; 
+	 padding:40px 25px;
+}
+.our-webcoderskull .cnt-block:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border: 0;
+}
+.practice-area .inner h3{ 
+    color:#3c3c3c; 
+	font-size:24px; 
+	font-weight:500;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px 0;
+}
+.practice-area .inner p{ 
+    font-size:14px; 
+	line-height:22px; 
+	font-weight:400;
+}
+.practice-area .inner img{
+	display:inline-block;
 }
 
-#about_content {
-	float: center;
+
+.our-webcoderskull{
+  background: url("../images/gallery/gallery-bg.jpg") no-repeat center top / cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.our-webcoderskull .cnt-block{ 
+   float:left; 
+   width:100%; 
+   background:black; 
+   padding:30px 20px; 
+   text-align:center; 
+   margin: 0 0 28px;
+
+
+}
+.our-webcoderskull .cnt-block figure{
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+   display:inline-block;
+   margin-bottom: 15px;
+}
+.our-webcoderskull .cnt-block img{ 
+   width:148px; 
+   height:148px; 
+   border-radius:100%; 
+
+}
+.our-webcoderskull .cnt-block h3{ 
+   color:#2a2a2a; 
+   font-size:20px; 
+   font-weight:500; 
+   padding:6px 0;
+   text-transform:uppercase;
+}
+.our-webcoderskull .cnt-block h3 a{
+  text-decoration:none;
+  color: #FFCE2B;
+}
+.our-webcoderskull .cnt-block h3 a:hover{
+	color:#337ab7;
+}
+.our-webcoderskull .cnt-block p{ 
+   color: white; 
+   font-size:13px; 
+   line-height:20px; 
+   font-weight:400;
+}
+.our-webcoderskull .cnt-block .follow-us{
+	margin:20px 0 0;
+}
+.our-webcoderskull .cnt-block .follow-us li{ 
+    display:inline-block; 
+	width:auto; 
+	margin:0 5px;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa{ 
+   font-size:24px; 
+   color:#767676;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
+   color:#025a8e;
+}
+
+#my_hr {
+	width: 20%;
+	border: 2px solid #FFCE2B;
+}
+
+.vision {
+	padding-top: 10%;
+}
+
+#myfooter {
+	background-color: black;
+}
+#my_footer {
+	color: #FFCE2B;
 }
