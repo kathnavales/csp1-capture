@@ -108,6 +108,10 @@ h3 {
 .abouth1 {
 	color: #FFCE2B;
 }
+
+.about_h1 {
+	color: white;
+}
 #my_about {
 	padding-top: 2%;
 	text-align: center;
@@ -143,6 +147,17 @@ h3 {
 #left_col {
 	 padding: 15%;
 }
+
+#left_col1 {
+	 padding: 5%;
+	 background-color: #FFCE2B;
+	 color: white;
+}
+
+div > h3 {
+	color: black;
+}
+
 #right_col1 {
 	background-color: #5f5e5c;	
 }
@@ -276,6 +291,12 @@ ul{
 #my_hr {
 	width: 20%;
 	border: 2px solid #FFCE2B;
+}
+
+#my_hr1 {
+	width: 20%;
+	border: 2px solid black;
+
 }
 
 .vision {
